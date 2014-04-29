@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>@Page.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/images/icon.png">
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div id="page" class="group">
+        <header>
+            <p class="title"><a href="/">Sriram Karthik Badam</a></p>
+            <p>Hi! I am a Ph.D. student cruising through my second year at Purdue University. I work in Visualization, Human Computer Interaction, and Visual Analytics, and more specifically on supporting collaborative analytics in multi-device ecosystems through middleware toolkits and post-WIMP interaction. I enjoy rock climbing and I am a tennis fanatic.</p>
+            <nav>
+                <ul>
+                    @foreach (var contentPage in App.ContentPages)
+                    {
+                        if (contentPage.Title == Page.Title)
+                        {
+                            <li><a href="~/ContentPage/@contentPage.Id" title="@contentPage.Header" class="current">@contentPage.Header</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="~/ContentPage/@contentPage.Id" title="@contentPage.Header">@contentPage.Header</a></li>
+                        }
+                    }
+                </ul>
+            </nav>
+        </header>
+        <section>
+            @RenderBody()
+        </section>
+    </div>
+</body>
+</html>
