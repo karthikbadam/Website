@@ -1,15 +1,105 @@
 ﻿@{
-    
+    Page.Title = "Karthik Badam";
+
 }
 
-<!DOCTYPE html>
+<script>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
+    
+    //~need to figure out how to use the json file for this~
+    var publicationList = {
+         "Badam2014": {
+            "title": "Tracing and Sketching Performance using Blunt-tipped Styli on Direct-Touch Tablets",
+            "author": "Sriram Karthik Badam, Senthil Chandrasegaran, Niklas Elmqvist, and Karthik Ramani",
+            "booktitle": "Proceedings of the ACM Conference on Advanced Visual Interfaces",
+            "year": "2014",
+            "pages": "To appear",
+            "type": "conference"
+        },
+
         
-    </body>
-</html>
+        "Zhao2014": {
+            "title": "skWiki: A Multimedia Sketching System for Collaborative Creativity",
+            "author": "Zhenpeng Zhao, Sriram Karthik Badam, Senthil Chandrasegaran, Deok Gun Park, Niklas Elmqvist, Lorraine Kisselburgh, and Karthik Ramani",
+            "booktitle": "Proceedings of the ACM CHI Conference on Human Factors in Computing Systems",
+            "year": "2014",
+            "pages": "To appear",
+            "type": "conference",
+            "video": "https://www.youtube.com/watch?v=kNBSvsUVFIU",
+            "link": "https://engineering.purdue.edu/cdesign/wp/wp-content/uploads/2014/02/skwiki.pdf"
+        },
+    
+        "Fisher2014": {
+            "title": "Designing Peer-to-Peer Distributed User Interfaces: Case Studies on Building Distributed Applications",
+            "author": "Eli-Raymond Fisher, Sriram-Karthik Badam, and Niklas Elmqvist",
+            "journal": "International Journal of Human-Computer Studies",
+            "volume": "72",
+            "number": "1",
+            "year": "2014",
+            "pages": "100-110",
+            "type": "journal",
+            "link": "https://engineering.purdue.edu/~elm/projects/dui-design/dui-design.pdf"
+        }
+    
+       
+    };
+    
+    console.log(publicationList);
+    var keys = Object.keys(publicationList);
+    
+    $(document).ready(function () {
+    
+        keys.forEach(function (key) {
+            var publication = publicationList[key];
+            if (publication.type == "journal") {
+                var div = $("#publicationsList"+publication.year);
+    
+                div.append('<li style="list-style: square; margin-left: 15px;"><p id="publicationJournal">' + publication.author + ". " + publication.title + ". " + "<i>" + publication.journal + ",</i> " + publication.volume+ "(" + publication.number + "): " + publication.pages + ", " + publication.year + "."+"</p></li>");
+    
+               if (publication.link) {
+                    div.append('<a href='+publication.link +'>[PDF]</a>');
+               }
+    
+               if (publication.video) {
+                    div.append('<a href='+publication.video +'>[VIDEO]</a>');
+               }
+    
+            } else if (publication.type == "conference") {
+    
+                var div = $("#publicationsList"+publication.year);
+                div.append('<li style="list-style: square; margin-left: 15px;"><p id="publicationConference">' + publication.author + ". " + publication.title + ". " + "<i>" + publication.booktitle + ",</i> "+ publication.pages + ", " + publication.year + ". "+"</p></li>");
+    
+               if (publication.link) {
+                    div.append('<a href='+publication.link +'>[PDF]</a>');
+               }
+    
+               if (publication.video) {
+                    div.append('<a href='+publication.video +'>[VIDEO]</a>');
+               }
+            }
+        });
+    
+    });
+    
+</script>
+
+<div id="publicationsDiv">
+    <p style="font-weight: 700;">
+    2014
+    </p>
+    <ul id="publicationsList2014">
+
+    </ul>
+
+    <ul id="publicationsList2015">
+
+    </ul>
+
+    <ul id="publicationsList2016">
+
+    </ul>
+
+    <ul id="publicationsList2017">
+
+    </ul>
+</div>

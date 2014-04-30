@@ -5,7 +5,7 @@
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
-    font: inherit;
+    /*font: inherit;*/
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -106,15 +106,15 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #323232;
-    color: #D6F870;
-    border-top: 1px solid #D6F870;
+    background-color: #808080;
+    color: #ffdf7a;
+    border-top: 1px solid #ff6a00;
 }
 
 nav a.current {
-    background-color: #323232;
-    color: #D6F870;
-    border-top: 2px solid #D6F870;
+    background-color: #808080;
+    color: #ffdf7a;
+    border-top: 2px solid #ff6a00;
 }
 
 section {
@@ -349,4 +349,28 @@ ul.thumbnails li:hover span.image-overlay {
     margin: 0px;
     color: #ff6a00;
     font-family: Calibri;
+}
+
+#footer {
+    margin-top: 10px;
+    font-family: Calibri;
+    color: #999;
+}
+
+#publicationJournal {
+    margin-bottom: 5px;
+    font-family: Calibri;
+    margin-top: 10px;
+}
+
+#publicationConference {
+    margin-bottom: 5px;
+    font-family: Calibri;
+    margin-top: 10px;
+}
+
+#publicationsDiv a {
+    color: #ff6a00;
+    font-family: Calibri;
+    margin-left: 5px;
 }
