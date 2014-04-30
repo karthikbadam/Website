@@ -106,13 +106,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #808080;
+    background-color: #323232;
     color: #ffdf7a;
     border-top: 1px solid #ff6a00;
 }
 
 nav a.current {
-    background-color: #808080;
+    background-color: #323232;
     color: #ffdf7a;
     border-top: 2px solid #ff6a00;
 }
@@ -123,6 +123,7 @@ section {
     float: left;
     padding: 20px;
     border-top: 4px solid #323232;
+    border-bottom: 4px solid #323232;
 }
 
 section p {
