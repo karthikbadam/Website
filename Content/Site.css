@@ -319,6 +319,7 @@ ul.thumbnails li:hover span.image-overlay {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    
 }
 
 #defaultKeyWords p {
@@ -341,6 +342,7 @@ ul.thumbnails li:hover span.image-overlay {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    font-size: 14px;
 }
 
 
