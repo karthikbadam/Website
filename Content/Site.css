@@ -57,7 +57,7 @@ body {
     color: #323232;
     background: url(../images/background.png) no-repeat right top;
     margin-top: 80px;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 a {
@@ -72,19 +72,20 @@ a:hover {
 }
 
 #page {
-    width: 1080px;
+    width: 90%;
     margin: 0 auto;
 }
 
 header {
     font-family: Calibri, sans-serif;
     float: left;
-    width: 300px;
+    width: 25%;
+    margin-left: 30px;
     margin-right: 30px;
 }
 
 header p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -118,7 +119,7 @@ nav a.current {
 }
 
 section {
-    width: 700px;
+    width: 65%;
     background-color: #fff;
     float: left;
     padding: 20px;
