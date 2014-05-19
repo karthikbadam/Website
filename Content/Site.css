@@ -52,8 +52,8 @@ table {
 /* Main Styles */
 
 body {
-    font-size: 13px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-family: Calibri, calibri, sans-serif;
     color: #323232;
     background: url(../images/background.png) no-repeat right top;
     margin-top: 80px;
@@ -77,7 +77,7 @@ a:hover {
 }
 
 header {
-    font-family: 'Arial', sans-serif;
+    font-family: Calibri, sans-serif;
     float: left;
     width: 300px;
     margin-right: 30px;
@@ -156,7 +156,7 @@ article.newsitem .newsbody, article.twitteritem .twitterbody {
 
 article.newsitem .newsbody header, article.twitteritem .twitterbody header {
     float: none;
-    font-family: 'Tahoma', 'Helvetica, Arial', 'Helvetica, Arial', sans-serif;
+    font-family: 'Tahoma', 'calibri', 'calibri', sans-serif;
     width: 100%;
     margin-right: 0;
 }
@@ -304,7 +304,7 @@ ul.thumbnails li:hover span.image-overlay {
 
 .mainContactDiv p {
     margin: 0px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
 }
 
 #defaultKeyWords {
@@ -322,13 +322,13 @@ ul.thumbnails li:hover span.image-overlay {
 
 #defaultKeyWords p {
     margin: 0px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
 }
 
 #defaultKeyWords a {
     margin: 0px;
     color: #ff6a00;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
 }
 
 #advisorDetails {
@@ -345,35 +345,35 @@ ul.thumbnails li:hover span.image-overlay {
 
 #advisorDetails p {
     margin: 0px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
 }
 
 #advisorDetails a {
     margin: 0px;
     color: #ff6a00;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
 }
 
 #footer {
     margin-top: 10px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
     color: #999;
 }
 
 #publicationJournal {
     margin-bottom: 5px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
     margin-top: 10px;
 }
 
 #publicationConference {
     margin-bottom: 5px;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
     margin-top: 10px;
 }
 
 #publicationsDiv a {
     color: #ff6a00;
-    font-family: Helvetica, Arial;
+    font-family: calibri;
     margin-left: 5px;
 }
