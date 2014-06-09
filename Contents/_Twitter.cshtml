@@ -1,11 +1,12 @@
 ﻿@{
     // provide your Twitter screen name
-    string screenName = "karthikb007";
+    string screenName = "";
 }
 
 @if (String.IsNullOrEmpty(screenName)) {
-    <p>
-        Welcome to the Twitter Page! Please view the Contents/_Twitter.cshtml page and fill out your Twitter screen name.
+    <p>        
+        <img src="../data/page_not_found.gif" width="100%" alt="Proxemics">
+
     </p>
 } else {
     var tweets = TwitterHelper.GetUserTimelime(screenName);
