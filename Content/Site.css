@@ -383,3 +383,15 @@ ul.thumbnails li:hover span.image-overlay {
     font-family: 'Source Sans Pro';
     margin-left: 5px;
 }
+
+#projectsDiv {
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+#projectsDiv a {
+    color: #ff6a00;
+    font-family: 'Source Sans Pro';
+    margin-left: 5px;
+}
