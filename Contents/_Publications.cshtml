@@ -13,8 +13,9 @@
             "author": "Sriram Karthik Badam, Senthil Chandrasegaran, Niklas Elmqvist, and Karthik Ramani",
             "booktitle": "Proceedings of the ACM Conference on Advanced Visual Interfaces",
             "year": "2014",
-            "pages": "To appear in May",
-            "type": "conference"
+            "pages": "193-200",
+            "type": "conference",
+            "link": "https://engineering.purdue.edu/cdesign/wp/wp-content/uploads/2014/05/sketch-media.pdf"
         },
 
         
@@ -23,7 +24,7 @@
             "author": "Zhenpeng Zhao, Sriram Karthik Badam, Senthil Chandrasegaran, Deok Gun Park, Niklas Elmqvist, Lorraine Kisselburgh, and Karthik Ramani",
             "booktitle": "Proceedings of the ACM CHI Conference on Human Factors in Computing Systems",
             "year": "2014",
-            "pages": "To appear",
+            "pages": "1235-1244",
             "type": "conference",
             "video": "https://www.youtube.com/watch?v=kNBSvsUVFIU",
             "link": "https://engineering.purdue.edu/cdesign/wp/wp-content/uploads/2014/02/skwiki.pdf"
@@ -57,7 +58,7 @@
                 div.append('<li style="list-style: square; margin-left: 15px;"><p id="publicationJournal">' + publication.author + ". " + publication.title + ". " + "<i>" + publication.journal + ",</i> " + publication.volume+ "(" + publication.number + "): " + publication.pages + ", " + publication.year + "."+"</p></li>");
     
                if (publication.link) {
-                    div.append('<a href='+publication.link +'>[PDF]</a>');
+                    div.append('<a href='+publication.link +' style="margin-left: 15px;">[PDF]</a>');
                }
     
                if (publication.video) {
@@ -70,7 +71,7 @@
                 div.append('<li style="list-style: square; margin-left: 15px;"><p id="publicationConference">' + publication.author + ". " + publication.title + ". " + "<i>" + publication.booktitle + ",</i> "+ publication.pages + ", " + publication.year + ". "+"</p></li>");
     
                if (publication.link) {
-                    div.append('<a href='+publication.link +'>[PDF]</a>');
+                    div.append('<a href='+publication.link +' style="margin-left: 15px;">[PDF]</a>');
                }
     
                if (publication.video) {
@@ -85,7 +86,7 @@
 
 <div id="publicationsDiv">
     
-    <p style="font-weight: 700;">2014</p>
+    <p style="font-weight: 500;">2014</p>
     <ul id="publicationsList2014">
         
     </ul>

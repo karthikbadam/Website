@@ -366,14 +366,16 @@ ul.thumbnails li:hover span.image-overlay {
 
 #publicationJournal {
     margin-bottom: 5px;
-    font-family: 'Source Sans Pro';
+    font-family: sans-serif;
     margin-top: 10px;
+    font-size: 100%;
 }
 
 #publicationConference {
     margin-bottom: 5px;
-    font-family: 'Source Sans Pro';
+    font-family: sans-serif;
     margin-top: 10px;
+    font-size: 100%;
 }
 
 #publicationsDiv a {
