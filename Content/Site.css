@@ -52,8 +52,8 @@ table {
 /* Main Styles */
 
 body {
-    font-size: 12px;
-    font-family: "Source Sans Pro", Calibri, calibri, sans-serif;
+    font-size: 14px;
+    font-family: Helvetica, Sans-Serif, "Source Sans Pro", Calibri, calibri, sans-serif;
     color: #323232;
     background: url(../images/background.png) no-repeat right top;
     margin-top: 80px;
@@ -137,6 +137,11 @@ section p {
 h1 {
     font-size: 20px;
     margin-bottom: 15px;
+}
+
+.email {
+    
+    color: #999;
 }
 
 .title {
@@ -293,7 +298,6 @@ ul.thumbnails li:hover span.image-overlay {
 .mainContactDiv {
     width: 33%;
     margin: 0px;
-    height: 240px;
     border: 1px dashed #343434;
     padding: 5px;
     display: inline-block;
@@ -312,7 +316,6 @@ ul.thumbnails li:hover span.image-overlay {
 #defaultKeyWords {
     width: 65%;
     margin-left: 5px;
-    height: 240px;
     border: 1px dashed #343434;
     padding: 5px;
     display: inline-block;
@@ -343,13 +346,15 @@ ul.thumbnails li:hover span.image-overlay {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-size: 100%;
 }
 
 
 #advisorDetails p {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: Georgia, helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
 }
 
 #advisorDetails a {

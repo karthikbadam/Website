@@ -5,8 +5,7 @@
 
 @if (String.IsNullOrEmpty(screenName)) {
     <p>        
-        <img src="../data/page_not_found.gif" width="100%" alt="Proxemics">
-
+        
     </p>
 } else {
     var tweets = TwitterHelper.GetUserTimelime(screenName);

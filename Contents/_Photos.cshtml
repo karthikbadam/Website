@@ -6,7 +6,7 @@
 
 @if (String.IsNullOrEmpty(flickrKey) || String.IsNullOrEmpty(flickrUserName)) {
     <p>
-                <img src="../data/page_not_found.gif" width="100%" alt="Proxemics">
+                
     </p>
 } else {
     var photos = Flickr.GetPhotos(flickrKey, flickrUserName);
