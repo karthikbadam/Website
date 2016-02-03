@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>@Page.Title</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="~/Content/Site.mobile.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/images/icon.png">
-    <link rel="stylesheet" href="~/Content/jquery.mobile-1.0.min.css" />
-    <link rel="stylesheet" href="~/Content/Site.mobile.css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
-    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
-    <script src="~/Scripts/jquery.mobile-1.0.min.js"></script>
+    <script src="~/Content/jquery-2.1.0.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
 
     @RenderSection("head", required: false)
 </head>
 <body>
-    <div id="page" class="group" data-role="page">
-        <div data-role="header" data-theme="c">
-
-            <div data-role="header" data-theme="c">
-                <h1>Sriram Karthik Badam</h1>
-            </div>
-
-            <div class="intro">
-                <p>Hi! I am a Ph.D. student cruising through my second year at Purdue University. I work in Visualization, Human Computer Interaction, and Visual Analytics, and more specifically on supporting collaborative analytics in multi-device ecosystems through middleware toolkits and post-WIMP interaction. I enjoy rock climbing and I am a tennis fanatic.</p>
-            </div>
-
-
-
-            <div id="nav" data-role="navbar">
+    <div id="page" class="group">
+        <header>
+            <p class="title"><a href="/">Sriram Karthik Badam</a></p>
+            <p>Hi! I am a Ph.D. student in the computer science department at University of Maryland. I work in Visualization, Human-Computer Interaction, and Visual Analytics, and more specifically on supporting collaborative visual analytics in multi-device and large display ecosystems. I enjoy rock climbing and I am a tennis fanatic. </p>
+            <nav>
                 <ul>
                     @foreach (var contentPage in App.ContentPages)
                     {
                         if (contentPage.Title == Page.Title)
                         {
-                            <li><a href="~/ContentPage/@contentPage.Id" title="@contentPage.Header" class="ui-btn-active">@contentPage.Header</a></li>
+                            <li><a href="~/ContentPage/@contentPage.Id" title="@contentPage.Header" class="current">@contentPage.Header</a></li>
                         }
                         else
                         {
@@ -41,12 +30,8 @@
                         }
                     }
                 </ul>
-            </div>
-
-
-        </div>
-
-
+            </nav>
+        </header>
         <section>
             @RenderBody()
         </section>

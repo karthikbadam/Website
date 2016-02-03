@@ -53,7 +53,7 @@ table {
 
 body {
     font-size: 14px;
-    font-family: Helvetica, Sans-Serif, "Source Sans Pro", Calibri, calibri, sans-serif;
+    font-family:  'Gill Sans', Helvetica, Sans-Serif, "Source Sans Pro", Calibri, calibri, sans-serif;
     color: #323232;
     background: url(../images/background.png) no-repeat right top;
     margin-top: 80px;
@@ -83,6 +83,7 @@ header {
     margin-left: 30px;
     margin-right: 30px;
     text-align: left;
+    margin-bottom: 50px;
 }
 
 img.desaturate { 
@@ -134,7 +135,7 @@ section {
     width: 65%;
     background-color: #fff;
     float: left;
-    padding: 20px;
+    padding: 10px;
     border-top: 4px solid #323232;
     border-bottom: 4px solid #323232;
     border-left: 1px solid #323232;
@@ -324,7 +325,7 @@ ul.thumbnails li:hover span.image-overlay {
 
 .mainContactDiv p {
     margin: 0px;
-    font-family: 'Source Sans Pro';
+    font-family: sans-serif, Roboto, 'Gill Sans', 'Source Sans Pro';
 }
 
 #defaultKeyWords {
@@ -342,16 +343,28 @@ ul.thumbnails li:hover span.image-overlay {
 
 #defaultKeyWords p {
     margin: 0px;
-    font-family: 'Source Sans Pro';
+    font-family: sans-serif,'Source Sans Pro';
 }
 
 #defaultKeyWords a {
     margin: 0px;
     color: #ff6a00;
-    font-family: 'Source Sans Pro';
+    font-family: sans-serif, 'Source Sans Pro';
 }
 
 #advisorDetails {
+    width: 100%;
+    border: 1px dashed #343434;
+    padding: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+#demoDetails {
     width: 100%;
     border: 1px dashed #343434;
     padding: 5px;
